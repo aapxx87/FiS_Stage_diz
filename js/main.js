@@ -56,5 +56,13 @@ function poisk() {
 
   result = findFarm(bigBukwa(ubrProb(str)));
 
-  document.getElementById('result1').innerHTML = result;
+  displayResult(result);
 }
+
+
+function displayResult(result) {
+
+      result1.closest('.card').style.display = 'block';
+      result1.innerHTML = `${result}`;
+
+  }
