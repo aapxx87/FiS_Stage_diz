@@ -1,15 +1,15 @@
-.col1 {
-    height: 35px;
-}
 
+
+.col1 {
+  height: 35px;
+}
 
 .col-8 {
-    text-align: center;
+  text-align: center;
 }
 
-
 .card-result {
-height: 40px;
-font-size: 15px;
-text-align: center;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
 }
