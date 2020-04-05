@@ -25,23 +25,33 @@
 
 
 
+
     <!-- Инпут ввода названи ялекарства с кнопкой поиска -->
     <div class="row row-1">
 
       <div class="col-1"></div>
 
       <div class="col-10">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Название лекарства" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <form class="input-group mb-3" onsubmit="poisk(); return false;">
+
+
+            <input type="search" class="form-control" id="inp_1" placeholder="Введите название лекарства">
+
+
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Поиск</button>
+            <button class="btn btn-outline-secondary">Искать</button>
           </div>
-        </div>
+
+        </form>
       </div>
 
       <div class="col-1"></div>
 
+
     </div>
+
+
+
 
 
 
@@ -58,9 +68,7 @@
       <div class="col-1"></div>
       <div class="col-10">
         <div class="card">
-          <div class="card-body card-result">
-            Амелотекс
-          </div>
+          <div class="card-body card-result" id="result1"></div>
         </div>
       </div>
       <div class="col-1"></div>
@@ -160,78 +168,78 @@
         <div class="card">
 
 
-            <div class="card">
-              <div class="card-header" id="headingFour">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Антрисоль 1
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  Дифлюкан 2 шт</br> Зовиракс 5 флаконов</br> Лидокаин спрей
-                </div>
-              </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Антрисоль 1
+                </button>
+              </h5>
             </div>
 
-
-            <div class="card">
-              <div class="card-header" id="headingFive">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Антрисоль 2
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body">
-                  Дифлюкан 2 шт</br> Зовиракс 5 флаконов</br> Лидокаин спрей
-                </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                Дифлюкан 2 шт</br> Зовиракс 5 флаконов</br> Лидокаин спрей
               </div>
             </div>
-
-
-            <div class="card">
-              <div class="card-header" id="headingSix">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Антрисоль 3
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                <div class="card-body">
-                  Дифлюкан 2 шт</br> Зовиракс 5 флаконов</br> Лидокаин спрей
-                </div>
-              </div>
-            </div>
-
-
           </div>
+
+
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Антрисоль 2
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                Дифлюкан 2 шт</br> Зовиракс 5 флаконов</br> Лидокаин спрей
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Антрисоль 3
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <div class="card-body">
+                Дифлюкан 2 шт</br> Зовиракс 5 флаконов</br> Лидокаин спрей
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
+    </div>
 
 
 
 
 
-      <!-- Пустая строка пробел -->
-      <div class="row">
-        <div class="col col1"></div>
-      </div>
+    <!-- Пустая строка пробел -->
+    <div class="row">
+      <div class="col col1"></div>
+    </div>
 
 
 
 
 
-      <!-- Пустая строка пробел -->
-      <div class="row">
-        <div class="col col1"></div>
-      </div>
+    <!-- Пустая строка пробел -->
+    <div class="row">
+      <div class="col col1"></div>
+    </div>
 
 
 
