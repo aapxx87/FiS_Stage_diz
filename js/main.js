@@ -40,6 +40,7 @@ const bigBukwa = (str) => {
 };
 
 
+
 const ubrProb = (str) => {
 
   const preobrText = str.trim();
@@ -48,21 +49,21 @@ const ubrProb = (str) => {
 };
 
 
+
 function poisk() {
-  let str;
-  let result;
 
-  str = document.getElementById('inp_1').value;
+  const str = document.getElementById('inp_1').value;
 
-  result = findFarm(bigBukwa(ubrProb(str)));
+  const result = findFarm(bigBukwa(ubrProb(str)));
 
   displayResult(result);
 }
 
 
+
 function displayResult(result) {
 
-      result1.closest('.card').style.display = 'block';
-      result1.innerHTML = `${result}`;
+  result1.closest('.card').style.display = 'block';
+  result1.innerHTML = `${result}`;
 
-  }
+}
